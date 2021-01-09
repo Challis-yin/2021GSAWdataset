@@ -14,6 +14,10 @@ def test2():
 @app.route('/summary', methods=['GET', 'POST'])
 def test3():
     return render_template("summary.html")
+    
+@app.route('/details', methods=['GET', 'POST'])
+def test4():
+    return render_template("details.html")
 
-app.run()
+app.run(host="0.0.0.0")
 

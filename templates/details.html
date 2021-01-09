@@ -41,14 +41,7 @@
 </head>
 
 <body>
-  
-   
-    
     <!--header area start-->
-                
-    </div>
-    
-    
     <header>
         <div class="main_header">
             <div class="header_middle">
@@ -80,7 +73,7 @@
                                     <ul class="social-network social-circle">
 					
 					
-										<li><a href="https://github.com/Challis-yin" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
+										<li><a href="https://github.com/Challis-yin/2021GSAWdataset" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
 										</li>
 										
 									</ul>
@@ -103,16 +96,10 @@
                                     <ul>
                                         <li><a href="/">introduce<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                <li><a href="index-2.html">Home 2</a></li>
-                                                <li><a href="index-3.html">Home 3</a></li>
-                                                <li><a href="index-4.html">Home 4</a></li>
-                                                <li><a href="index-5.html">Home 5</a></li>
-                                                <li><a href="index-6.html">Home 6</a></li>
+                                                <li><a href="/">Home 1</a></li>
                                             </ul>
                                         </li>
                                         <li class="mega_items"><a  class="active" href="/search">dataset</a>
-                                            
                                         </li>
                                         <li><a href="blog.html">blog<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
@@ -150,10 +137,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb_content">
-                        <h3>Summary Table</h3>
+                        <h3>details</h3>
                         <ul>
-                            <li><a href="index.html">Dataset</a></li>
-                            <li>summary</li>
+                            <li><a href="/search">Dataset</a></li>
+                            <li>details</li>
                         </ul>
                     </div>
                 </div>
@@ -162,116 +149,145 @@
     </div>
     <!--breadcrumbs area end-->
     
-    <!--wishlist area start -->
-    <div class="wishlist_area">
+	
+	<!--tab start-->
+		<section class="main_content_area">
         <div class="container">   
-            <form action="#"> 
+            <div class="account_dashboard">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="table_desc wishlist">
-                            <div class="cart_page table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th class="product_remove">Check</th>
-                                            <th class="product_name">Char</th>
-                                            <th class="product_name">pos</th>
-                                            <th class="product-remove">id</th>
-                                            <th class="product_quantity">ref/alt</th>
-                                            <th class="product_total">gene_locus</th>
-                                            <th class="product_total">P_value</th>
-                                            <th class="product_total">tf_motif</th>
-                                            <th class="product_total">top_lead_ID</th>
-                                            <th class="product_total">top_lead_P</th>
-                                            <th class="product_total">top_lead_rsquare</th>
-                                            <th class="product_total">mark</th>
-                                            <th class="product_total">markbar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                           <td class="product_remove"><a href="/details">@</a></td>
-                                            <td class="product_thumb">9</td>
-                                            <td class="product_name"><a href="#">22052734</a></td>
-                                            <td class="product-price">rs6475604</td>
-                                            <td class="product_quantity">T/C</td>
-                                            <td class="product_total">CDKN2B-AS1</td>
-                                            <td class="product_total">0.435</td>
-                                            <td class="product_total">TAF2_HM07219</td>
-                                            <td class="product_total">rs1412829</td>
-                                            <td class="product_total">2.19E-35</td>
-                                            <td class="product_total">0.904</td>
-                                            <td class="product_total">3D,CON,CS</td>
-											<td class="product_thumb"><a href="#"><img src="../static/assets/img/ts/t.jpg" alt=""></a></td>
-                                        </tr>
+                    <div class="col-sm-12 col-md-2 col-lg-2">
+                        <!-- Nav tabs -->
+                        <div class="dashboard_tab_button">
+                            <ul role="tablist" class="nav flex-column dashboard-list">
+                                <li><a href="#dashboard" data-toggle="tab" class="nav-link active">Variantsummary</a></li>
+                                <li> <a href="#TF" data-toggle="tab" class="nav-link">TF annotation</a></li>
+                                <li><a href="#downloads" data-toggle="tab" class="nav-link">Histone modification</a></li>
+                                <li><a href="#address" data-toggle="tab" class="nav-link">Conservation</a></li>
+                                <li><a href="#account-details" data-toggle="tab" class="nav-link">Hi-C</a></li>
+                        </div>    
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content dashboard_content">
+                            <div class="tab-pane fade show active" id="dashboard">
+                                <h3>Variant Annotation </h3>
+								<div class="wishlist_area">
+									<div class="container">   
+										<form action="#"> 
+											<div class="row">
+												<div class="col-12">
+													<div class="table_desc wishlist">
+														<div class="cart_page table-responsive">
+															<table>
+																<thead>
+																	<tr>
+																		<th class="product_name">Check</th>
+																		<th class="product_name">Char</th>
+																		<th class="product_name">pos</th>
+																		<th class="product-remove">id</th>
+																		<th class="product_quantity">ref/alt</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																	    <td class="product_remove">9:22052734</td>
+																		<td class="product_thumb">T/C</td>
+																		<td class="product_name">REGULATORY</td>
+																		<td class="product-price">ENSR00000233992</td>
+																		<td class="product_quantity">NA</td>
+																	</tr>
 
-                                        <tr>
-                                           <td class="product_remove"><a href="details">@</a></td>
-                                            <td class="product_thumb">9</td>
-                                            <td class="product_name"><a href="#">22052734</a></td>
-                                            <td class="product-price">rs6475604</td>
-                                            <td class="product_quantity">T/C</td>
-                                            <td class="product_total">CDKN2B-AS1</td>
-                                            <td class="product_total">0.435</td>
-                                            <td class="product_total">TAF2_HM07219</td>
-                                            <td class="product_total">rs1412829</td>
-                                            <td class="product_total">2.19E-35</td>
-                                            <td class="product_total">0.904</td>
-                                            <td class="product_total">3D,CON,CS</td>
-											<td class="product_thumb"><a href="#"><img src="../static/assets/img/ts/t.jpg" alt=""></a></td>
-                                        </tr>
-                                        <tr>
-                                           <td class="product_remove"><a href="/details">@</a></td>
-                                            <td class="product_thumb">9</td>
-                                            <td class="product_name"><a href="#">22052734</a></td>
-                                            <td class="product-price">rs6475604</td>
-                                            <td class="product_quantity">T/C</td>
-                                            <td class="product_total">CDKN2B-AS1</td>
-                                            <td class="product_total">0.435</td>
-                                            <td class="product_total">TAF2_HM07219</td>
-                                            <td class="product_total">rs1412829</td>
-                                            <td class="product_total">2.19E-35</td>
-                                            <td class="product_total">0.904</td>
-                                            <td class="product_total">3D,CON,CS</td>
-											<td class="product_thumb"><a href="#"><img src="../static/assets/img/ts/t.jpg" alt=""></a></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>   
-                            </div>  
-
+																	<tr>
+																	    <td class="product_remove">9:22052734</td>
+																		<td class="product_thumb">T/C</td>
+																		<td class="product_name">REGULATORY</td>
+																		<td class="product-price">ENSR00000233992</td>
+																		<td class="product_quantity">NA</td>
+																	</tr>
+																</tbody>
+															</table>   
+														</div>  
+													</div>
+												 </div>
+											 </div>
+										</form> 
+									</div>
+								</div>
+                            </div>
+                            <div class="tab-pane fade" id="TF">
+                                <h3>TF Annotation</h3>
+								Todo
+                            </div>
+                            <div class="tab-pane fade" id="downloads">
+                                <h3>Histone modification</h3>
+								Todo
+                            </div>
+                            <div class="tab-pane" id="address">
+                                <h4 class="billing-address">Conservation</h4>
+                                Todo
+                            </div>
+                            <div class="tab-pane fade" id="account-details">
+                                <h3>Hi-C </h3>
+								<div class="wishlist_area">
+									<div class="container">   
+										<form action="#"> 
+											<div class="row">
+												<div class="col-12">
+													<div class="table_desc wishlist">
+														<div class="cart_page table-responsive">
+															<table>
+																<thead>
+																	<tr>
+																		<th class="product_name">Char1</th>
+																		<th class="product_name">Start1</th>
+																		<th class="product_name">End1</th>
+																		<th class="product-remove">Char2</th>
+																		<th class="product_quantity">Start2</th>
+																		<th class="product_name">End2</th>
+																		<th class="product_name">Score</th>
+																		<th class="product_name">ID</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																	    <td class="product_remove">9</td>
+																		<td class="product_remove">22050000</td>
+																		<td class="product_remove">22050000</td>
+																		<td class="product_remove">9</td>
+																		<td class="product_remove">22235000</td>
+																	    <td class="product_remove">22235000</td>
+																		<td class="product_remove">1.6746</td>
+																		<td class="product_remove">rs6475604</td>
+																	</tr>
+																	<tr>
+																	    <td class="product_remove">9</td>
+																		<td class="product_remove">22050000</td>
+																		<td class="product_remove">22050000</td>
+																		<td class="product_remove">9</td>
+																		<td class="product_remove">22235000</td>
+																	    <td class="product_remove">22235000</td>
+																		<td class="product_remove">1.6746</td>
+																		<td class="product_remove">rs6475604</td>
+																	</tr>
+																</tbody>
+															</table>   
+														</div>  
+													</div>
+												 </div>
+											 </div>
+										</form> 
+									</div>
+								</div>
+								
+                            </div>
                         </div>
-                     </div>
-                 </div>
-            </form> 
-
-			<!--breadcrumbs area start-->
-    <div class="breadcrumbs_area  breadcrumbs_bg">
-        <div class="container">   
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                        <h3>LD-Expension</h3>
                     </div>
                 </div>
-            </div>
-        </div>         
-    </div>
-    <!--breadcrumbs area end-->
-	<div class="breadcrumbs_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-						<a href="#"><img src="../static/assets/img/ts/Figure1.png" alt=""></a>
-				</div>
-				<div class="col-6">
-						<a href="#"><img src="../static/assets/img/ts/Figure2.png" alt=""></a>
-				</div>
-			</div>
-		</div>	
-	</div>
-			
-			
+            </div>  
+        </div>        	
+    </section>
+
+    <!--tab end-->
             <div class="row">
                 <div class="col-12">
                      <div class="wishlist_share">
@@ -279,13 +295,12 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-download"></i></a></li>
 							<li><a href="#"><i class="fa fa-photo"></i></a></li>
-							<li><a href="#"><i class="fa fa-github"></i></a></li>
-							
+							<li><a href="https://github.com/Challis-yin/2021GSAWdataset"><i class="fa fa-github"></i></a></li>
                         </ul>      
                     </div>
                 </div> 
             </div>
-//单击@符号进入详情页面
+
         </div>
     </div>
     <!--wishlist area end -->
@@ -293,6 +308,12 @@
 <!-- JS
 ============================================ -->
 <!--jquery min js-->
+<!--magnific popup min js-->
+<script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
+<!--jquery countdown min js-->
+<script src="../static/assets/js/jquery.countdown.js"></script>
+<!--jquery ui min js-->
+<script src="../static/assets/js/jquery.ui.js"></script>
 <script src="../static/assets/js/vendor/jquery-3.5.0.min.js"></script>
 <!--popper min js-->
 <script src="../static/assets/js/popper.js"></script>
@@ -302,12 +323,6 @@
 <script src="../static/assets/js/owl.carousel.min.js"></script>
 <!--slick min js-->
 <script src="../static/assets/js/slick.min.js"></script>
-<!--magnific popup min js-->
-<script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
-<!--jquery countdown min js-->
-<script src="../static/assets/js/jquery.countdown.js"></script>
-<!--jquery ui min js-->
-<script src="../static/assets/js/jquery.ui.js"></script>
 <!--jquery elevatezoom min js-->
 <script src="../static/assets/js/jquery.elevatezoom.js"></script>
 <!--isotope packaged min js-->
