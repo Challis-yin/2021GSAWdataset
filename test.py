@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from flask import Flask ,jsonify,render_template,url_for,redirect,abort, request
-from flask_sqlalchemy import *
 
 app = Flask('kkk')
 @app.route('/', methods=['GET', 'POST'])
